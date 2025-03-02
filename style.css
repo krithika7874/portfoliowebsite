@@ -1,0 +1,561 @@
+/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #080808;
+    color: #fff;
+}
+.home {
+    position: relative;
+    transition: 0.5s;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assert/bgicon.jpeg);
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    background-size: 650px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(249, 0, 77);
+}
+.header .logo{
+    font-size: 30px;
+}
+.logo {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.container a {
+    text-decoration: none;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Pacifico', cursive;
+    margin-left: 20px;
+}
+span {
+    color: #f9004d;
+    font-family: 'Pacifico', cursive;
+}
+.content {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    line-height: 1.4;
+}
+.content h1 {
+    font-size: 4rem;
+    color: #f9004d;
+}
+.content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.content h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* --------------------------about---------------------------- */
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 20px 30px;
+}
+.about h1 {
+    font-size: 2rem;
+    margin: 85px 0px 20px 0px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+}
+.about p {
+    font-size: 1.0rem;
+    margin: 20px 60px 20px 1px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.row {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.cv {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(249, 0, 77);
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.cv a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+/*----------------skills------------*/
+.skills {
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    padding: 20px 30px;
+}
+.skills li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.skills h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'pacifico', cursive;
+}
+.skills h3 {
+    font-size: 1.2rem;
+    margin: 25px 0px 20px 0px;
+    color: white;
+    text-transform: uppercase;
+}
+.skill-head {
+    width: 500px;
+    height: 90%;
+    margin: 20px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 29px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+.skill-head:hover {
+    box-shadow: 0 14px 29px rgba(249, 0, 77, 0.5), 0 10px 10px rgba(255, 255, 255, 0.22);
+    color: white;
+}
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.25);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar:hover {
+    box-shadow: 0 14px 29px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1) 0%, rgba(252, 103, 103, 1) 100%);
+}
+.html {
+    width: 90%;
+    animation: html 2s;
+}
+.css {
+    width: 70%;
+    animation: css 2s;
+}
+.JavaScript {
+    width: 90%;
+    animation: JavaScript 2s;
+}
+.React {
+    width: 80%;
+    animation: React 2s;
+}
+.java {
+    width: 80%;
+    animation: java 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes JavaScript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes React {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+/* ---------------------------------------------project----------------- */
+.project {
+    width: 100%;
+    height: 170vh;
+}
+.project-head {
+    margin: 40px 0;
+    font-size: 1.3rem;
+    padding: 20px 40px 20px 40px;
+}
+.project-head h1 {
+    font-family: 'pacifico', cursive;
+}
+.proj-col img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    transition: transform 0.5s;
+}
+.proj-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+}
+.proj-col {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    width: 300px;
+}
+.layer {
+    display: none;
+    width: 100%;
+    height: 0;
+    padding: 3px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer p {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+}
+.layer h3 {
+    padding: 5px;
+}
+.layer a {
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    border-radius: 50%;
+    color: #ff004f;
+    height: 60px;
+    text-align: center;
+}
+.proj-col:hover img {
+    transform: scale(1.1);
+}
+.proj-col:hover .layer {
+    height: 100%;
+    display: flex;
+}
+.contact {
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+.Con-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 40px;
+}
+.contact-left {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    flex-basis: 35%;
+}
+.contact-left h1 {
+    font-size: 2.2rem;
+    font-family: 'pacifico', cursive;
+    margin: 30px;
+}
+.contact-left p {
+    font-size: 1.2rem;
+    margin: 30px;
+}
+.contact-left i {
+    font-size: 1.5rem;
+}
+.social-media {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    justify-content: space-between;
+}
+.social-media a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in;
+}
+.social-media a:hover {
+    color: rgb(249, 0, 77);
+    font-size: 1.5rem;
+    transform: translateY(-5px);
+}
+.Cv2 {
+    margin: 10px 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: #f9004d 2px solid;
+    border-radius: 10px;
+    color: #f9004d;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+.Cv2:hover {
+    background-color: #f9004d;
+    border: none;
+    color: white;
+}
+.Cv2 a:hover {
+    color: white;
+}
+.contact-right {
+    flex-basis: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #262626;
+    outline: none;
+    border: none;
+    color: white;
+}
+form input::placeholder, form textarea::placeholder {
+    color: gray;
+    font-size: 1.0rem;
+}
+form .btn2 {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.copyright {
+    color: rgb(245, 236, 236);
+    font-size: 13px;
+    padding: 0px 0px 20px;
+}
+nav .fas{
+    display: none;
+}
+#msg{
+    color: #61b752;
+    margin-top:-5px;
+    display: block;
+    margin-left: 29px;
+}
+
+/* Responsive Design */
+
+@media only screen  and (max-width:600px){
+    .header{
+       background-size: 400px;
+       background-position: right bottom 10px;
+    }
+    .content{
+        top:150px;
+    }
+    .content h1{
+        font-size:2.4rem;
+
+    }
+    .content h3{
+        font-size: 1.2rem
+    }
+    .content h2{
+        font-size: 1.4rem;
+
+    }
+    nav .fas{
+        display: block;
+        font-size:25px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px; /* Position it on the right side */
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+        
+    }
+   nav ul  {
+       
+    flex-direction: column;
+    padding-top: 30px;
+    
+    
+    }
+    nav ul li a{
+        font-size: 29px;
+    }
+    nav ul li{
+        margin: 20px 25px;
+        padding: 10px 0px;
+        
+    }
+    nav ul .fas{
+        position: absolute;
+        top:10px;
+        left: 25px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .about{
+        height: 180vh;
+    }
+    .about-col-1{
+        width: 100%;
+        position: absolute;
+        top:1300px;
+    }
+    .about h1 {
+        font-size: 1.5rem;
+    }
+    .about p {
+        font-size: 0.9rem;
+        margin: 10px 20px;
+    }
+  
+.skills h1 {
+    font-size: 1.5rem;
+}
+.skills h3 {
+    font-size: 1rem;
+}
+.project {
+    height: auto;
+    padding: 20px;
+    width: 500px;
+}
+.layer {
+    height: auto;
+    padding: 10px;
+    transition: none;
+}
+
+.contact {
+    height: auto;
+    padding: 20px;
+    width: 500px;
+    
+}
+.contact h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.contact-left, .contact-right {
+    width: 100%;
+    padding: 20px;
+   
+   
+}
+.Cv2{
+    margin-top:20px;
+}
+.Con-container {
+    flex-direction: column;
+    align-items: center;
+}
+.copyright{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    margin-left:20px;
+}
+}
+
+
